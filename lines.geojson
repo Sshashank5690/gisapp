@@ -1,0 +1,18 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [77.2090, 28.6139], 
+            [78.9629, 20.5937]   
+          ]
+        },
+        "properties": {
+          "name": "Route from Agra to New Delhi"
+        }
+      }
+    ]
+  }

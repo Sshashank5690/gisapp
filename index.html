@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIS Web App</title>
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Include Leaflet Control Geocoder CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <!-- Include custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="map"></div>
+    <input type="file" id="fileInput" accept=".geojson" />
+<button onclick="uploadFile()">Upload</button>
+<input type="checkbox" id="pointsCheckbox" onchange="toggleLayer('points')"> Points
+<input type="checkbox" id="linesCheckbox" onchange="toggleLayer('lines')"> Lines
+<input type="checkbox" id="polygonsCheckbox" onchange="toggleLayer('polygons')"> Polygons
+
+
+    <!-- Include Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Include Leaflet Control Geocoder JavaScript -->
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <!-- Your custom JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
